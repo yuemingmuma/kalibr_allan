@@ -38,7 +38,7 @@ fprintf('sample period of %.5f.\n',delta);
 
 % Calculate our tau range (max is half of the total measurements)
 taumax = floor((length(ts_imua.Time)-1)/2);
-tau = delta*logspace(log10(delta),log10(taumax),2000);
+tau = delta*logspace(log10(1),log10(taumax),2000);
 %tau = delta*linspace(1,taumax,1000);
 
 
